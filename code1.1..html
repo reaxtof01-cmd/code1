@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>MY WEBPAGE</title>
+        <style>
+            :root{--bg:#f7f8fb;--card:#fff;--accent:#0b5fff;--muted:#6b7280}
+            body{font-family:Verdana, Geneva, Tahoma, sans-serif;margin:0;background:var(--bg);color:#111}
+            .container{max-width:900px;margin:28px auto;padding:20px}
+            header{text-align:center;margin-bottom:12px}
+            nav ul{display:flex;gap:10px;justify-content:center;padding:0;list-style:none;margin:12px 0}
+            /* Remove bullets/numbers and reset default list spacing globally */
+            ul, ol { list-style: none; margin: 0; padding: 0; }
+            /* Optional: give list items a little vertical spacing still */
+            li { margin: 6px 0; }
+            nav a{display:inline-block;padding:8px 12px;border-radius:8px;text-decoration:none;color:var(--muted);border:1px solid transparent}
+            nav a:focus, nav a:hover{outline:none;border-color:rgba(11,95,255,0.12);color:var(--accent);background:rgba(11,95,255,0.04)}
+            nav a[aria-current="true"]{color:var(--accent);border-color:rgba(11,95,255,0.18);background:linear-gradient(90deg,rgba(11,95,255,0.06),transparent)}
+            main{background:var(--card);padding:20px;border-radius:10px;box-shadow:0 8px 24px rgba(2,6,23,0.06)}
+            .section{display:none}
+            .section.active{display:block}
+            .meta{color:var(--muted);font-size:0.95rem;margin-top:8px}
+            footer{margin-top:14px;text-align:center;color:var(--muted);font-size:0.9rem}
+            @media (max-width:560px){nav ul{flex-direction:column;gap:6px}nav a{width:100%;text-align:center}}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>AUTOBIOGRAPHY</h1>
+                <p style="margin-top:6px;color:var(--muted);">Hello, welcome to my website where you will get to know me.</p>
+            </header>
+
+            <nav role="tablist" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#about" role="tab" class="nav-link" data-target="about" id="link-about">About Me</a></li>
+                    <li><a href="#hobbies" role="tab" class="nav-link" data-target="hobbies" id="link-hobbies">Hobbies</a></li>
+                        <li><a href="#accomplishments" role="tab" class="nav-link" data-target="accomplishments" id="link-accomplishments">Accomplishments</a></li>
+                    <li><a href="#dream" role="tab" class="nav-link" data-target="dream" id="link-dream">Dream Profession</a></li>
+                    <li><a href="#goals" role="tab" class="nav-link" data-target="goals" id="link-goals">Goals</a></li>
+                </ul>
+            </nav>
+
+            <main>
+                <section id="about" class="section" role="tabpanel" aria-labelledby="link-about">
+                    <h2>About Me</h2>
+                    <img src="Images/download.jpg" height="700" alt="Young student in white polo shirt with dark jacket sits in front of a sunny window, with a slight smile against a blue background">
+                    <p class="meta">Hello</p>
+                    <p>My name is Reaxtof Cseph O. Ramos, I am 19 years old, born on September 01, 2006 <br>and I live in Pueto Princesa, Palawan. I Completed my Elementary Education at East Central School <br>and my High School and Senior High School at Palawan National School.</p>
+                </section>
+
+                <section id="hobbies" class="section" role="tabpanel" aria-labelledby="link-hobbies">
+                    <h2>Hobbies</h2>
+                    <p class="meta">Things I like to do in my free time.</p>
+                    
+                    <ul>
+                        <li>Playing Video Games like</li>
+                        <li><b>Minecraft</b> and</li>
+                        <li><img src="Images/Screenshot 2025-10-08 215126.png" height="700" alt="Purple Enderman player in a natural Minecraft environment"></li>
+                        <li><b>Valorant</b></li>
+                        <li><img src="Images/MV5BZmQwMjQ2ZTUtZmM5MC00MTdkLWIxYzgtODU1NzQ4Zjg4NmMxXkEyXkFqcGc@._V1_.jpg" height="1000" alt="Valorant"></li>
+                        <li><b>Reading fantasy novels</b></li>
+                        <li><img src="Images/Volume_8.webp" height="1000" alt="image not found"></li>
+                        <li><b>Watching movies/Dramas</b></li>
+                        <li><img src="Images/download (1).jpg" height="1000" alt="image not found "></li>
+                        <li><b>Hiking</b></li>
+                        <li><img src="Images/bcacc456-1161-4cf6-b835-b32e25506572.jpg" height="1000" alt="image not found "></li>
+                    </ul>
+                </section>
+
+                    <section id="accomplishments" class="section" role="tabpanel" aria-labelledby="link-accomplishments">
+                        <h2>Accomplishments</h2>
+                        <p class="meta">Here are some of my proudest accomplishments:</p>
+                        <ul>
+                            <li><b>Graduated with high honors from senior high school.</b></li>
+                            <img src="Images/ff1814c8-ad86-4d7f-86cb-eb4afe737c5a.jpg" height="700" alt="Graduation Picture of Reaxtof Cseph O. Ramos in his formal attire holding his diploma">
+                            <li><b>Participated in city-meet on chess when I was in elementary school.</b></li>
+                            <img src="Images/8a7cfb36-4d7d-4e1f-8363-1bf6b1b1939b.jpg" height="700" alt="Reaxtof Cseph O. Ramos playing chess during a competition">
+                            <li><b>Become part of the youth leadership program in my community.</b></li>
+                            <img src="Images/6b92e7e8-0a48-4346-aba2-c71cbc642490.jpg" height="700" alt="Reaxtof Cseph O. Ramos during a youth leadership program event">
+                        </ul>
+                    </section>
+
+                <section id="dream" class="section" role="tabpanel" aria-labelledby="link-dream">
+                    <h2>Dream Profession</h2>
+                    <p class="meta">Geodetic Engineer</p>
+                    <p>Why? Because Geodetic engineering has many job opportunities, <br>while having a high salary potential and I get to work whenever I want.</p>
+                </section>
+
+                <section id="goals" class="section" role="tabpanel" aria-labelledby="link-goals">
+                    <h2>Goals</h2>
+                    <p class="meta">11 Year from now I want to achieve this goals:</p>
+                    <ol>
+                        <li>Graduate college</li>
+                        <li>Pass my licensure exam</li>
+                        <li>Land a job as a Geodetic Engineer</li>
+                        <li>Start my own Geodetic Engineering firm</li>
+                    </ol>
+                </section>
+            </main>
+
+            
+        </div>
+            <h1>Contact Me Through:</h1>
+            <p>number: 09683918778</p>
+            <p><a href="mailto:reaxtof01@gmail.com">reaxtof01@gmail.com</a></p>
+            <p><a href="https://www.facebook.com/reaxtof">Reaxtof Cseph Ramos</a></p>
+        <script>
+            
+            (function(){
+                const links = Array.from(document.querySelectorAll('.nav-link'))
+                const sections = Array.from(document.querySelectorAll('.section'))
+
+                function setActive(id, push=true){
+                    sections.forEach(s=>s.classList.toggle('active', s.id===id))
+                    links.forEach(l=>l.setAttribute('aria-current', l.dataset.target===id))
+                    if(push) history.replaceState(null,'', '#'+id)
+                }
+
+                links.forEach((link,i)=>{
+                    link.addEventListener('click', e=>{
+                        e.preventDefault(); setActive(link.dataset.target)
+                    })
+                    link.addEventListener('keydown', e=>{
+                        if(e.key==='ArrowRight'){ e.preventDefault(); links[(i+1)%links.length].focus() }
+                        else if(e.key==='ArrowLeft'){ e.preventDefault(); links[(i-1+links.length)%links.length].focus() }
+                        else if(e.key==='Enter' || e.key===' '){ e.preventDefault(); setActive(link.dataset.target) }
+                    })
+                })
+
+                const initial = (location.hash && document.getElementById(location.hash.slice(1))) ? location.hash.slice(1) : 'about'
+                setActive(initial,false)
+                window.addEventListener('hashchange', ()=>{
+                    const id = location.hash.slice(1)
+                    if(document.getElementById(id)) setActive(id,false)
+                })
+            })()
+        </script>
+    </body>
+</html>
